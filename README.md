@@ -1,10 +1,7 @@
-![GlowstoneLauncher图标<img width="512" height="512" alt="logo" src="https://github.com/user-attachments/assets/7d8bf11c-626f-49dd-b9c5-d0697a4b215b" />
+<img width="512" height="512" alt="logo" src="https://github.com/user-attachments/assets/7d8bf11c-626f-49dd-b9c5-d0697a4b215b" />{: width="180"}
 # GlowstoneLauncher
 现代化、轻量的 Minecraft Java版 第三方启动器
 简洁美观 · 功能丰富 · 性能优秀
-
-`version: v1.0.0` `platform: Windows` `license: Source Not Visible`
-
 ## 简介
 GlowstoneLauncher 是一款基于C# WPF构建的现代化Minecraft启动器，致力于为玩家提供流畅美观、功能完善的游戏启动体验。
 支持Windows平台，采用自定义下载架构，国内镜像加速下载。
