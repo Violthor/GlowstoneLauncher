@@ -1,5 +1,4 @@
-<div align="center">
-< img src="./assets/logo.png" width="140" alt="GlowstoneLauncher图标">
+<img width="512" height="512" alt="logo" src="https://github.com/user-attachments/assets/1c618bb7-1c6e-4314-a905-543fedf9ebd9" />
 
 # GlowstoneLauncher
 
