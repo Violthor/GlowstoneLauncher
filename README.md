@@ -12,6 +12,10 @@ C# WPF开发的 Minecraft Java 版启动器
 [![license](https://img.shields.io/badge/license-Source_Not_Visible-orange?style=flat-square)]()
 </div>
 
+官网：https://glowstonelauncher.cn/
+官网目前维修中ing...
+爱发电主页：https://ifdian.net/a/glowstonelauncher
+爱发电赞助纯为自愿，不强制！！！
 ## 简介
 GlowstoneLauncher 是一款基于 C# WPF 开发的 Minecraft Java 启动器，主打国内网络环境优化，简化游戏版本管理流程。
 专为 Windows 平台打造，使用自研下载方案，依托国内镜像大幅提升资源下载速度。
