@@ -39,7 +39,6 @@ GlowstoneLauncher 是一款基于 C# WPF 开发的 Minecraft Java 启动器，�
 ## 重要声明
 
 1.禁止抄袭！禁止抄袭！禁止抄袭！禁止抄袭！禁止抄袭！禁止抄袭！禁止抄袭！禁止抄袭！禁止抄袭！禁止抄袭！禁止抄袭！禁止抄袭！
-
 2. GlowstoneLauncher 为第三方自制 Minecraft 启动器，**非 Mojang、微软官方出品**，与 Mojang、Microsoft 无任何隶属关系。
 3. Minecraft 商标、游戏本体版权归 Mojang Studios 及微软所有，本项目仅提供游戏启动管理工具，**不提供游戏本体文件**。
 4. 本启动器分为普通版与赞助版，赞助仅为对开发者的支持，不代表购买游戏版权。
@@ -52,5 +51,5 @@ GlowstoneLauncher 是一款基于 C# WPF 开发的 Minecraft Java 启动器，�
 正式版v1.0.1制作中ing...🤔
 
 ## 制作人+制作方式
-<div align="center">
+
 刘刘-Violthor+Utie Shinvar+AI辅助制作(～￣▽￣)～👏👏👏
