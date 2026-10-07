@@ -1,7 +1,7 @@
-<p align="center">
+<div align="center">
 < img src="./assets/logo.png" width="140" alt="GlowstoneLauncher图标">
-<h1>GlowstoneLauncher</h1>
-</p >
+
+# GlowstoneLauncher
 
 C# WPF开发的 Minecraft Java 版启动器
 
@@ -10,6 +10,7 @@ C# WPF开发的 Minecraft Java 版启动器
 [![version](https://img.shields.io/badge/version-v1.0.0-blue?style=flat-square)](https://github.com/Viiolthor/GlowstoneLauncher/releases)
 [![platform](https://img.shields.io/badge/platform-Windows-green?style=flat-square)]()
 [![license](https://img.shields.io/badge/license-Source_Not_Visible-orange?style=flat-square)]()
+</div>
 
 ## 简介
 GlowstoneLauncher 是一款基于 C# WPF 开发的 Minecraft Java 启动器，主打国内网络环境优化，简化游戏版本管理流程。
