@@ -1,5 +1,6 @@
 <p align="center">
-< img src="https://user-images.githubusercontent.com/161803039/285664138-6411-4993-afec-b04776cdc964.png" alt="GlowstoneLauncher图标" style="width:140px;">
+
+![GlowstoneLauncher图标](https://user-images.githubusercontent.com/161803039/285664138-6411-4993-afec-b04776cdc964.png)
 
 # GlowstoneLauncher
 </p >
