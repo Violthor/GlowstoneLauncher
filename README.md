@@ -1,6 +1,5 @@
 <p align="center">
-
-![GlowstoneLauncher图标](https://user-images.githubusercontent.com/161803039/285664138-6411-4993-afec-b04776cdc964.png)
+ ![GlowstoneLauncher图标](./assets/logo.png)
 
 # GlowstoneLauncher
 </p >
