@@ -1,6 +1,7 @@
-<img width="512" height="512" alt="logo" src="https://github.com/user-attachments/assets/3e7e7419-f607-4267-832d-9d35bf3e1c43" />
-
-#                                                 GlowstoneLauncher
+<p align="center">
+   < img src="https://user-images.githubusercontent.com/161803039/285664138-6411-4993-afec-b04776cdc964.png" width="140" alt="GlowstoneLauncher图标">
+   <h1 align="center">GlowstoneLauncher</h1>
+ </p >
 C# WPF开发的 Minecraft Java 版启动器
 
 流畅体验 · 国内高速下载 · 自定义能力强
