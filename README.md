@@ -1,27 +1,6 @@
 <div align="center">
  < img src="./assets/logo.png" width="160" alt="GlowstoneLauncher图标">
 
-  C# WPF开发的 Minecraft Java 版启动器
-
-流畅体验 · 国内高速下载 · 自定义能力强
-
-[![version](https://img.shields.io/badge/version-v1.0.0-blue?style=flat-square)](https://github.com/Viiolthor/GlowstoneLauncher/releases)
-[![platform](https://img.shields.io/badge/platform-Windows-green?style=flat-square)]()
-[![license](https://img.shields.io/badge/license-Source_Not_Visible-orange?style=flat-square)]()
-
-# GlowstoneLauncher
-
-C# WPF开发的 Minecraft Java 版启动器
-
-流畅体验 · 国内高速下载 · 自定义能力强
-
-[![version](https://img.shields.io/badge/version-v1.0.0-blue?style=flat-square)](https://github.com/Viiolthor/GlowstoneLauncher/releases)
-[![platform](https://img.shields.io/badge/platform-Windows-green?style=flat-square)]()
-[![license](https://img.shields.io/badge/license-Source_Not_Visible-orange?style=flat-square)]()
-</div>
-
-# GlowstoneLauncher
-
 C# WPF开发的 Minecraft Java 版启动器
 
 流畅体验 · 国内高速下载 · 自定义能力强
