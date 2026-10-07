@@ -1,4 +1,4 @@
-< img src="width="512" height="512" alt="logo" src="https://github.com/user-attachments/assets/7d8bf11c-626f-49dd-b9c5-d0697a4b215b"width="180" alt="GlowstoneLauncher图标">
+< img src="<img width="512" height="512" alt="logo" src="https://github.com/user-attachments/assets/69f2b0e9-d24d-4411-8fec-8bd77ca50458" />"width="180" alt="GlowstoneLauncher图标">
 # GlowstoneLauncher
 现代化、轻量的 Minecraft Java版 第三方启动器
 简洁美观 · 功能丰富 · 性能优秀
