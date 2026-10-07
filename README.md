@@ -1,5 +1,7 @@
 <div align="center">
- < img src="./assets/logo.png" width="160" alt="GlowstoneLauncher图标">
+< img src="./assets/logo.png" width="140" alt="GlowstoneLauncher图标">
+
+# GlowstoneLauncher
 
 C# WPF开发的 Minecraft Java 版启动器
 
