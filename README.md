@@ -1,5 +1,7 @@
 <p align="center">
- ![GlowstoneLauncher图标](./assets/logo.png)
+ < img src="./assets/logo.png" width="140" alt="GlowstoneLauncher图标">
+ <h1>GlowstoneLauncher</h1>
+ </p >
 
 # GlowstoneLauncher
 </p >
