@@ -35,6 +35,7 @@ GlowstoneLauncher 是一款基于 C# WPF 开发的 Minecraft Java 启动器，�
 本启动器部分功能使用以下开源库，部分功能版权归原作者所有：
 - skin3d：3D皮肤渲染动画
 - EasyTier：异地组网联机功能
+- 本启动器基于开源框架 Electron + electron-vite 开发，框架版权归原作者所有；启动器业务逻辑、UI界面、MC相关功能代码由本人独立开发
 
 ## 重要声明
 
