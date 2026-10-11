@@ -5,7 +5,7 @@
 Glowstone Launcher
 
 </div>
-一款面向 **Minecraft Java 版** 的 Windows 第三方启动器，基于 Electron + React + Vite + TypeScript 构建。
+一款面向 Minecraft Java 版** 的 Windows 第三方启动器，基于 Electron + React + Vite + TypeScript 构建。
 提供版本下载与启动、Java 自动检测/安装、正版（微软）/离线/外置账号、皮肤披风管理、
 Modrinth + CurseForge 双源资源下载、本地开服与联机等能力。
 
