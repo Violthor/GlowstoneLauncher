@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+SC:wght@400;500;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "./tailwind-theme.css";
+@import "./typography.css";
+
+@custom-variant dark (&:is(.dark *));
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+}
+
+body {
+  font-family: 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  background: transparent;
+}
+
+/* 原生 button 默认带 ButtonFace 浅灰底（深色主题下显示成白色胶囊），统一置透明。
+   必须放在 @layer base：Tailwind 的 bg-* 工具类在 @layer utilities，分层规则中
+   utilities 晚于 base、可正常覆盖它；若写在 @layer 外（unlayered），按级联层规则
+   反而会压过所有分层的 bg-* 类，导致 Button 组件背景色全失效（按钮“隐身”）。 */
+@layer base {
+  button {
+    background-color: transparent;
+    background-image: none;
+  }
+}
+
+/* Disable text selection across the launcher UI; keep inputs editable/selectable */
+*, *::before, *::after {
+  -webkit-user-select: none;
+  user-select: none;
+}
+input, textarea, [contenteditable="true"], [contenteditable=""] {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* Never show the native grey drag ghost for UI chrome (icons/links/images/sidebar) */
+*, *::before, *::after {
+  -webkit-user-drag: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+/* Chromium 108 (Electron 22 / Win7) has no color-mix; Tailwind v4 emits a static LIGHT
+   fallback for neutral-color opacity utilities (bg-background/40 etc.), which renders white
+   in dark mode. Re-state correct rgba for both themes when color-mix is unsupported. */
+@supports not (color: color-mix(in lab, red, red)) {
+  :root .bg-background\/30{background-color:rgba(255,255,255,0.30)}
+  :root .bg-background\/40{background-color:rgba(255,255,255,0.40)}
+  :root .bg-card\/60{background-color:rgba(255,255,255,0.60)}
+  :root .bg-card\/80{background-color:rgba(255,255,255,0.80)}
+  :root .bg-card\/95{background-color:rgba(255,255,255,0.95)}
+  :root .bg-muted\/30{background-color:rgba(241,245,249,0.30)}
+  :root .bg-muted\/40{background-color:rgba(241,245,249,0.40)}
+  :root .bg-muted\/70{background-color:rgba(241,245,249,0.70)}
+  :root .bg-secondary\/80{background-color:rgba(241,245,249,0.80)}
+  :root .bg-secondary\/90{background-color:rgba(241,245,249,0.90)}
+  :root .bg-accent\/40{background-color:rgba(241,245,249,0.40)}
+  :root .text-muted-foreground\/40{color:rgba(100,116,139,0.40)}
+  :root .text-muted-foreground\/70{color:rgba(100,116,139,0.70)}
+  :root .border-border\/20{border-color:rgba(226,232,240,0.20)}
+  :root .border-border\/30{border-color:rgba(226,232,240,0.30)}
+  :root .border-border\/40{border-color:rgba(226,232,240,0.40)}
+  :root .border-border\/50{border-color:rgba(226,232,240,0.50)}
+  :root .border-border\/60{border-color:rgba(226,232,240,0.60)}
+  .dark .bg-background\/30{background-color:rgba(2,8,23,0.30)}
+  .dark .bg-background\/40{background-color:rgba(2,8,23,0.40)}
+  .dark .bg-card\/60{background-color:rgba(3,12,32,0.60)}
+  .dark .bg-card\/80{background-color:rgba(3,12,32,0.80)}
+  .dark .bg-card\/95{background-color:rgba(3,12,32,0.95)}
+  .dark .bg-muted\/30{background-color:rgba(30,41,59,0.30)}
+  .dark .bg-muted\/40{background-color:rgba(30,41,59,0.40)}
+  .dark .bg-muted\/70{background-color:rgba(30,41,59,0.70)}
+  .dark .bg-secondary\/80{background-color:rgba(30,41,59,0.80)}
+  .dark .bg-secondary\/90{background-color:rgba(30,41,59,0.90)}
+  .dark .bg-accent\/40{background-color:rgba(30,41,59,0.40)}
+  .dark .text-muted-foreground\/40{color:rgba(148,163,184,0.40)}
+  .dark .text-muted-foreground\/70{color:rgba(148,163,184,0.70)}
+  .dark .border-border\/20{border-color:rgba(30,41,59,0.20)}
+  .dark .border-border\/30{border-color:rgba(30,41,59,0.30)}
+  .dark .border-border\/40{border-color:rgba(30,41,59,0.40)}
+  .dark .border-border\/50{border-color:rgba(30,41,59,0.50)}
+  .dark .border-border\/60{border-color:rgba(30,41,59,0.60)}
+}
+
+/* ===== 毛玻璃效果（设置 > 视觉效果 中开启；关闭可提升性能） =====
+   让卡片、侧边栏、浮动弹出层呈现半透明 + 背景高斯模糊。backdrop-filter 会
+   模糊该元素“背后”的内容，因此配合自定义背景图/视频时质感最明显。 */
+.glass-mode [data-slot="card"],
+.glass-mode [data-slot="sidebar"],
+.glass-mode [data-slot="select-content"],
+.glass-mode [data-slot="dropdown-menu-content"],
+.glass-mode [data-slot="popover-content"] {
+  backdrop-filter: blur(20px) saturate(165%);
+  -webkit-backdrop-filter: blur(20px) saturate(165%);
+}
+.glass-mode [data-slot="card"] {
+  background-color: rgba(255, 255, 255, 0.62);
+  border-color: rgba(226, 232, 240, 0.65);
+}
+.glass-mode [data-slot="sidebar"] {
+  background-color: rgba(250, 250, 251, 0.72);
+  border-right-color: rgba(226, 232, 240, 0.6);
+}
+.glass-mode [data-slot="select-content"],
+.glass-mode [data-slot="dropdown-menu-content"],
+.glass-mode [data-slot="popover-content"] {
+  background-color: rgba(255, 255, 255, 0.78);
+  border-color: rgba(226, 232, 240, 0.65);
+}
+/* 深色主题下的毛玻璃 */
+.glass-mode.dark [data-slot="card"] {
+  background-color: rgba(4, 10, 24, 0.58);
+  border-color: rgba(148, 163, 184, 0.16);
+}
+.glass-mode.dark [data-slot="sidebar"] {
+  background-color: rgba(4, 10, 24, 0.68);
+  border-right-color: rgba(148, 163, 184, 0.14);
+}
+.glass-mode.dark [data-slot="select-content"],
+.glass-mode.dark [data-slot="dropdown-menu-content"],
+.glass-mode.dark [data-slot="popover-content"] {
+  background-color: rgba(6, 13, 28, 0.8);
+  border-color: rgba(148, 163, 184, 0.16);
+}
