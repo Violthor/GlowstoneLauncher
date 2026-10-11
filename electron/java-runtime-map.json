@@ -1,0 +1,18 @@
+{
+  "_comment": "Minecraft 版本 -> 必需 Java 大版本 的权威映射（官方锁定），前后端共用这一份数据。传统 1.x 走 legacy 区间；新年份版本(24w+/26.x)走 calendar；都不命中用 defaultLatest。downloads 为 JRE 下载源，{major} 占位，tuna 是目录列表需自行选取最新 zip。",
+  "legacy": [
+    { "minorMax": 16, "java": 8 },
+    { "minor": 17, "java": 16 },
+    { "minorMin": 18, "minorMax": 19, "java": 17 },
+    { "minor": 20, "patchMax": 4, "java": 17 },
+    { "minor": 20, "patchMin": 5, "java": 21 },
+    { "minorMin": 21, "java": 21 }
+  ],
+  "calendar": { "24": 21, "25": 25, "26": 25 },
+  "defaultLatest": 25,
+  "downloadFallbackMajor": { "16": 17 },
+  "downloads": [
+    { "id": "tuna", "kind": "listing", "url": "https://mirrors.tuna.tsinghua.edu.cn/Adoptium/{major}/jre/x64/windows/" },
+    { "id": "adoptium", "kind": "redirect", "url": "https://api.adoptium.net/v3/binary/latest/{major}/ga/windows/x64/jre/hotspot/normal/eclipse" }
+  ]
+}

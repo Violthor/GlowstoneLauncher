@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 480px; height: 320px;
+    background: transparent;
+    overflow: hidden;
+  }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    user-select: none;
+  }
+  /* The opaque surface lives on an inner card so its rounded corners are
+     actually composited as transparent (avoids black square corners). */
+  .card {
+    width: 480px; height: 320px;
+    background: #0a0a0f;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    -webkit-app-region: drag;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  .logo-container {
+    width: 140px; height: 140px;
+    position: relative;
+    animation: fadeIn 0.4s ease-out;
+  }
+  .logo-container img {
+    width: 100%; height: 100%;
+    object-fit: contain;
+    border-radius: 28px;
+    filter: drop-shadow(0 0 30px rgba(255,255,255,0.15));
+  }
+  .title {
+    margin-top: 20px;
+    font-size: 26px; font-weight: 700;
+    color: #fff;
+    letter-spacing: 3px;
+    animation: fadeIn 0.6s ease-out;
+  }
+  .subtitle {
+    margin-top: 6px;
+    font-size: 12px; color: rgba(255,255,255,0.4);
+    letter-spacing: 6px;
+    animation: fadeIn 0.8s ease-out;
+  }
+  .loader {
+    margin-top: 18px;
+    width: 160px; height: 2px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 2px; overflow: hidden;
+    animation: fadeIn 1s ease-out;
+  }
+  .loader::after {
+    content: '';
+    display: block;
+    width: 40%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+    border-radius: 2px;
+    animation: slide 0.8s ease-in-out infinite;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slide {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(350%); }
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo-container">
+      <img src="logo.png" alt="Glowstone" />
+    </div>
+    <div class="title">GLOWSTONE</div>
+    <div class="subtitle">LAUNCHER</div>
+    <div class="loader"></div>
+  </div>
+</body>
+</html>
