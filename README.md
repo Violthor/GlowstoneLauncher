@@ -17,7 +17,7 @@
 > 本项目与 Mojang Studios、Microsoft 没有任何隶属、授权或背书关系。Minecraft 是 Mojang Synergies AB 的商标。
 
 ## 版本区别
-| 能力 | 普通版 community | 赞助版 sponsor（默认） |
+| 能力 | 普通版 | 赞助版 |
 | ---- | ---- | ---- |
 | 版本下载/启动 / Java管理 / 账号 / 皮肤披风 / 资源下载 / Mod管理 | ✅ | ✅ |
 | 密钥联网激活（硬件绑定） | 无 | ✅ |
