@@ -6,7 +6,7 @@
 <dr>
 Glowstone Launcher
 
-</dvr>
+</div>
 
 一款面向 Minecraft Java 版的 Windows 第三方启动器
 
