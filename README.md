@@ -1,5 +1,6 @@
 <div align="center">
-< img width="512" height="512" alt="logo" src="https://github.com/user-attachments/as">
+<img width="512" height="512" alt="logo" src="https://github.com/user-attachments/assets/da68eb62-d1ce-49d9-b9f3-acc24fbbcc54" />
+
 <br>
 
 # Glowstone Launcher
