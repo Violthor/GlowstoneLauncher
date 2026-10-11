@@ -4,6 +4,7 @@
 # GlowstoneLauncher
 
 C# WPF开发的 Minecraft Java 版启动器
+
 本启动器功能及UI为自研，如有抄袭请联系作者改进
 
 流畅体验 · 国内高速下载 · 自定义能力强
