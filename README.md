@@ -1,16 +1,13 @@
 <div align="center">
+< img width="512" height="512" alt="logo" src="https://github.com/user-attachments/as">
+<br>
 
-<img width="512" height="512" alt="logo" src="https://github.com/user-attachments/assets/d66efb0f-a112-4271-a078-3a3b4d9571be" />
+# Glowstone Launcher
+<font size="5">一款面向 Minecraft Java 版的 Windows 第三方启动器</font>
 
-<dr>
-
-  #Glowstone Launcher
-</div>
-
-一款面向 Minecraft Java 版的 Windows 第三方启动器
-
-基于 Electron + React + Vite + TypeScript 构建。
+<font size="4">基于 Electron + React + Vite + TypeScript 构建。<br>
 提供版本下载与启动、Java自动检测/安装、正版(微软)/离线/外置账号、皮肤披风管理、Modrinth + CurseForge双资源下载、本地开服与联机等能力。
+</font>
 
 </div>
 
