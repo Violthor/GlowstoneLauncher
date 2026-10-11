@@ -1,11 +1,10 @@
 <div align="center">
 
-<!-- 把括号里换成你图片的链接 -->
 <img width="512" height="512" alt="logo" src="https://github.com/user-attachments/assets/d66efb0f-a112-4271-a078-3a3b4d9571be" />
 
-
 <dr>
-#Glowstone Launcher
+
+Glowstone Launcher
 
 </div>
 
