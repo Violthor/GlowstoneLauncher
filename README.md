@@ -1,3 +1,5 @@
+<img width="512" height="512" alt="logo" src="https://github.com/user-attachments/assets/764632c3-d55d-48b5-83bc-7fab9a227c73" />
+
 # Glowstone Launcher（萤石启动器）
 
 一款面向 **Minecraft Java 版** 的 Windows 第三方启动器，基于 Electron + React + Vite + TypeScript 构建。
