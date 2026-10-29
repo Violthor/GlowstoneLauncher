@@ -24,6 +24,7 @@
 | 本地开服、局域网联机 | 无 | ✅ |
 | 异地联机（内置 EasyTier 组网内核） | 无 | ✅ |
 | Mod翻译 | 无 | ✅ |
+| 存档备份+一键启动存档 | 无 | ✅ |
 
 普通版打包时会通过 Rollup 移除联机、开服相关前端代码，不包含 electron/lan.cjs、electron/server.cjs 以及 EasyTier 二进制文件，安装包体积更小。
 
