@@ -56,7 +56,7 @@
 > 方式B：下载ZIP压缩包版本，压缩包不容易被浏览器安全拦截，下载完成后解压得到安装程序。
 > 方式C：临时关闭Edge的Microsoft Defender SmartScreen，下载完成记得重新开启保护。
 
-文件SHA256：` sha256:79075bc4542d87f39ec18947901f484447dda6f3e32ff9979ef2b51c50a1ed6a`
+文件SHA256：` sha256:613557ce9397394d755778bfac989349ef4e8ce590be0ca1654dfe462dca33de`
 
 ## 目前发展
 正式版 v1.3.5.3 已发布
